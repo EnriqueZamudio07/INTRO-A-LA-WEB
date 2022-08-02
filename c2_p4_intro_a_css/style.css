@@ -1,0 +1,17 @@
+
+/* Tipos de selectores */
+
+/* Selector por etiqueta */
+h1{
+    color: blue;
+}
+
+/* Selector por clase */
+.Claseh1 {
+    color: red;
+}
+
+/* Selector por identificador */
+#IdH1{
+    color: greenyellow;
+}

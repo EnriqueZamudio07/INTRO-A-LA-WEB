@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <!-- Sirven para que el usuario ingrese información al sistema -->
+    <!-- Con escribir form y enter se escribira la estructura básica -->
+    <form action=""></form>
+
+    <!-- Estructura más detallada de un form -->
+
+    <form name="formulario" method="post" action="/send.php"></form>
+    <!-- Los formularios utilizan tres atributos: action, method y name. -->
+
+    <!-- ACTION: Aqui va la dirección a donde se enviarán los datos cuando el usuario
+    haga click en enviar -->
+
+    <!-- METHOD: Se define el tipo de método HTTP a utilizar, utilizaremos GET cuando
+    nos interese que los datos se envien en la propia URL. En caso contrario, POST. -->
+
+    <!-- NAME: Es el nombre del formulario para cuando necesitemos hacer referencia a el
+    (generalmente desde Javascrip o desde backend) -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <!-- LABEL -->
+    <!-- Es el nombre para el input, este se muestra en el formulario -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <!-- INPUT -->
+    <!-- Su funcionalidad más utilizada es la de servir como un campo de texto, dentro del formulario -->
+
+    <!-- Atributos del INPUT -->
+
+    <!-- type: tipo de campo, indica el tipo de campo del que se trata -->
+
+    <!-- name: nombre del campo, indica el nombre del campo para hacer referencia más tarde -->
+
+    <!-- value: valor por defecto, indica el valor inicial que tendrá ese campo de datos -->
+
+    <!-- form: nombre del formulario, asosia este campo de datos con un formulario especifico -->
+
+    <!-- placeholder: sugerencia, indica una sugerencia al usuario antes de escribir -->
+
+    <!-- size: número, indica el tamaño visual (número de carácteres) del campo de datos -->
+
+    <!-- autocomplete: on/off, activa o desactiva el autoacompletado para este campo -->
+
+    <!-- autofocus: establece el foco (coloca el cursor) en este campo al cargar la página -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <!-- TEXT AREA -->
+
+    <form name="formulario_ejemplo" action="">
+      <!-- Ejemplo de Input con PLACEHOLDER -->
+      <label for="">Nombre</label>
+      <input name="Nombre" type="text" placeholder="Escribe tu nombre" />
+
+      <br /><br />
+
+      <!-- Ejemplo de Input con VALUE (tendra valor por defecto) -->
+      <label for="">Nombre</label>
+      <input name="Nombre" type="text" value="Escribe tu nombre" />
+
+      <br /><br />
+
+      <!-- Ejemplo de TEXT AREA -->
+      <textarea name="texto" cols="50" rows="10 "></textarea>
+
+      <br /><br />
+
+      <!-- Atributos TYPE del INPUT -->
+      <!-- EMAIL y PASSWORD -->
+
+      <label for="">Email</label>
+      <input type="email" />
+
+      <br /><br />
+
+      <label for="">Contraseña</label>
+      <input type="Password" />
+
+      <br /><br />
+
+      <!-- RADIO BUTTONS -->
+      <input type="radio" value="1" />Rojo <input type="radio" value="2" />Azul
+
+      <br /><br />
+
+      <!-- CHECKBOX -->
+
+      <input type="checkbox" value="uno" /> Playera
+      <input type="checkbox" value="dos" /> Camisa
+
+      <br /><br />
+
+      <!-- Estos dos tipos de input pueden usar un sub-atributo llamado 
+    checked, que sirve para que por defecto este seleccionado un valor -->
+
+      <!-- Lo que ponemos dentro de el atributo "value" es el valor que recibe el back-end o la base de datos -->
+
+      <!-- DROPDOWN (Select) -->
+      <label for="">Estaciones del año</label>
+      <select name="" id="">
+        <option value="">Primavera</option>
+        <option value="">Verano</option>
+        <option value="">Otoño</option>
+        <option value="">Invierno</option>
+      </select>
+
+      <br><br>
+
+      <!-- SUMBIT -->
+      <input type="submit">
+
+    </form>
+
+    <!-- Checar los tipos de input en W3Schools -->
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClubFitness</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <header>
+    <h1>Bienvenidos al Club Fitness</h1>
+  </header>
+
+  <body>
+   
+    <form name="Formulario_Gimnasio" action="">
+        <fieldset>
+        <legend>Información general</legend>
+
+        <label for="nombre">Nombre</label>
+        <input name="nombre" type="text" placeholder="Escribe aqui" />
+
+        <br />
+
+        <p>¿Eres miembro?</p>
+        <input type="radio" value="1" />Miembro
+        <input type="radio" value="2" />No miembro
+
+        <br />
+
+        <p>Escribe tu personalidad</p>
+        <textarea name="personalidad" cols="50" rows="10"></textarea>
+
+        <br /><br />
+
+        <label for="">Email</label>
+        <input name="email" type="email" placeholder="Escribe aqui" />
+      </fieldset>
+      <br /><br />
+   
+      <label for="">Instalaciones</label>
+      <select name="">
+        <option value="">Navojoa</option>
+        <option value="">Obregón</option>
+        <option value="">Hermosillo</option>
+      </select>
+
+      <br />
+
+      <p>Selecciona fecha para reservar el Club</p>
+      <input type="datetime-local" name="hora" />
+
+      <br /><br />
+
+      <input type="checkbox" name="Aceptar" />
+      <label for="Aceptar">Estoy de acuerdo con las politicas del club</label>
+
+      <br /><br />
+
+      <input type="submit" value="envialo"/>
+    </form>
+  </body>
+</html>
