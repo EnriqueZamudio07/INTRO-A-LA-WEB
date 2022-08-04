@@ -1,0 +1,22 @@
+ul{
+    height: 90vh;
+    list-style: none;
+    display: flex;
+   /* flex direction me permite poner (elegir) el eje principal */
+   /* row = horizontal */
+   /* column = vertical */
+   flex-direction: row;
+   /* justify-content ayuda a acomodar todos los elementos de acuerdo al eje principal */
+   justify-content: center;
+   /* align-items permite acomodar los elementos utilizando el eje opuesto */
+   align-items: center;
+
+   flex-wrap: wrap;
+   /* para que align-content funcione debo usar flex-wrap */
+   align-content: center;
+
+}
+
+li{
+    margin-left: 15px;
+}
